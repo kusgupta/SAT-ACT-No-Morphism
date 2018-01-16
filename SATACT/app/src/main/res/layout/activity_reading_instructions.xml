@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kushangupta.satact.ReadingInstructions">
+
+    <RelativeLayout
+        android:id="@+id/relatived"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLength="180"
+                android:maxLines="5"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="Do not begin work until I tell you to. You have 65 minutes to work on Section 1, the Reading Test. Now, open your test book to Section 1, read the directions, and begin work."
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
